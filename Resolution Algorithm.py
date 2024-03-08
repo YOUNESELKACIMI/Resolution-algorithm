@@ -53,7 +53,7 @@ def check_validity(exp):
 
 def main():
     while True:
-        exp = input("Entrer une expression logique (ou 'exit' pour quitter) : ")
+        exp = input("\nEntrer une expression logique (ou 'exit' pour quitter) : ")
         
         if exp.lower() == 'exit':
             print("Fin du programme.")
