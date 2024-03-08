@@ -1,45 +1,43 @@
-# Resolution Algorithm for Logical Inference
+# Algorithme de résolution pour l'inférence logique
 
-This repository contains an implementation of the Resolution Algorithm for logical inference. The Resolution Algorithm is a fundamental method in automated reasoning and logic, used to check the validity of logical statements in propositional logic.
+Ce référentiel contient une implémentation de l'algorithme de résolution pour l'inférence logique. L'algorithme de résolution est une méthode fondamentale de raisonnement et de logique automatisés, utilisée pour vérifier la validité des énoncés logiques en logique propositionnelle.
 
-## Table of Contents
+## Table des matières
 
-- [Overview](#overview)
-- [How it Works](#how-it-works)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
+- [Aperçu](#aperçu)
+- [Comment ça marche](#comment-ça-fonctionne)
+- [Utilisation](#utilisation)
+- [Exemples](#exemples)
 
-## Overview
+## Aperçu
 
-The Resolution Algorithm is a decision procedure for checking the validity of a first-order logic formula by refutation. It operates by trying to find a contradiction from the set of clauses obtained by converting the input formula into conjunctive normal form (CNF).
+L'algorithme de résolution est une procédure de décision permettant de vérifier la validité d'une formule logique du premier ordre par réfutation. Il fonctionne en essayant de trouver une contradiction à partir de l'ensemble des clauses obtenues en convertissant la formule d'entrée en forme normale conjonctive (CNF).
 
-This repository provides a Python implementation of the Resolution Algorithm, allowing users to input logical expressions and determine their validity.
+Ce référentiel fournit une implémentation Python de l'algorithme de résolution, permettant aux utilisateurs de saisir des expressions logiques et de déterminer leur validité.
 
-## How it Works
+## Comment ça fonctionne
 
-The main steps of the Resolution Algorithm implementation are as follows:
+Les principales étapes de la mise en œuvre de l’algorithme de résolution sont les suivantes :
 
-1. **Conversion to CNF**: The input logical expression is converted into Conjunctive Normal Form (CNF) using the `to_cnf` function from the `sympy` library.
+1. **Conversion en CNF** : L'expression logique d'entrée est convertie en forme normale conjonctive (CNF) à l'aide de la fonction `to_cnf` de la bibliothèque `sympy`.
 
-2. **Negation and Simplification**: The CNF form of the negated input expression is generated, and then simplified using `to_cnf` again.
+2. **Négation et simplification** : La forme CNF de l'expression d'entrée niée est générée, puis simplifiée en utilisant à nouveau `to_cnf`.
 
-3. **Resolution**: The algorithm performs resolution on the set of clauses obtained from the negated and simplified CNF.
+3. **Résolution** : L'algorithme effectue une résolution sur l'ensemble des clauses obtenues à partir du CNF nié et simplifié.
 
-4. **Validity Check**: If an empty clause (contradiction) is derived, the original formula is considered valid.
+4. **Contrôle de validité** : Si une clause vide (contradiction) est dérivée, la formule originale est considérée comme valide.
 
-## Usage
+## Utilisation
 
-To use the Resolution Algorithm:
+Pour utiliser l'algorithme de résolution :
 
-1. Clone this repository to your local machine:
+1. Clonez ce référentiel sur votre machine locale :
 
-   ```bash
-   git clone https://github.com/your-username/resolution-algorithm.git
-2. Install the required dependencies. The sympy library is used for symbolic mathematics:
-   `pip install sympy`
-3. run the resolution algorithm `python Resolution Algorithm.py`
+    ```bash
+    clone git https://github.com/your-username/resolution-algorithm.git
+2. Installez les dépendances requises. La bibliothèque sympy est utilisée pour les mathématiques symboliques :
+    `pip installe sympy`
+3. exécutez l'algorithme de résolution `python Resolution Algorithm.py`
 
-## Examples
-![Resolution algorithm](https://github.com/YOUNESELKACIMI/Resolution-algorithm/assets/119015253/405a7b9d-8e0f-4484-bd6a-62ad23b08679)
+## Exemples
+![Algorithme de résolution](https://github.com/YOUNESELKACIMI/Resolution-algorithm/assets/119015253/405a7b9d-8e0f-4484-bd6a-62ad23b08679)
