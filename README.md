@@ -37,3 +37,7 @@ To use the Resolution Algorithm:
 
    ```bash
    git clone https://github.com/your-username/resolution-algorithm.git
+2. Install the required dependencies. The sympy library is used for symbolic mathematics:
+   `pip install sympy`
+3. run the resolution algorithm `python Resolution Algorithm.py`
+   
