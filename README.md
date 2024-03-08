@@ -41,3 +41,4 @@ To use the Resolution Algorithm:
    `pip install sympy`
 3. run the resolution algorithm `python Resolution Algorithm.py`
    
+![Resolution algorithm](https://github.com/YOUNESELKACIMI/Resolution-algorithm/assets/119015253/405a7b9d-8e0f-4484-bd6a-62ad23b08679)
